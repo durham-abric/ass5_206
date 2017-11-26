@@ -1,15 +1,16 @@
 #include <stdio.h>
-#include "list.c"
+#include "list.h"
 
 int main(){
-    int newVal;
+    int *newVal;
     printf("Enter new node value (int):");
-    scanf("%[^\n]d", newval);
+    scanf("%d", newVal);
     newList();
-    while(newVal > 0){
-        addNode(newVal);
+
+    while(*newVal > 0){
+        addNode(*newVal);
         printf("Enter new node value (int):");
-        scanf("%[^\n]d", newval);
+        scanf("%d", newVal);
     }
 
     printf("Completed adding values to the linked list!");
