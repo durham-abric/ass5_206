@@ -29,7 +29,7 @@ void prettyPrint(){
     temp = temp->next;
  }
  if(head==NULL) 
-    printf("No list to be printed!");
+    printf("No list to be printed!\n");
  else 
     printf("NULL\n");
 
